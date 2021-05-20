@@ -64,6 +64,9 @@ menuentry "Arch" {
 include themes/refind-dreary/theme.conf
 ```
 
+## TODO:
+* Add script to change boot order Windows / Arch
+
 ---
 
 # refind-dreary - [ORIGINAL]
