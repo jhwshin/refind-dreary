@@ -46,8 +46,8 @@ menuentry "Arch" {
     volume          "<LABEL>"
     loader          /boot/vmlinuz-linux
     initrd          /boot/initramfs-linux.img
-    options         "root=UUID=<UUID> initrd=boot\<CPU_MICROCODE>.img"
-    add_options     "rw add_efi_memmap resume=UUID=<UUID> resume_offset=<RESUME_OFFSET>"
+    options         "root=UUID=<UUID> initrd=boot\<CPU_MICROCODE>.img resume=UUID=<UUID> resume_offset=<RESUME_OFFSET>"
+    add_options     "rw add_efi_memmap"
 
     submenuentry "Boot using Linux Fallback" {
         loader          /boot/vmlinuz-linux
