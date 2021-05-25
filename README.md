@@ -54,6 +54,16 @@ menuentry "Arch" {
         initrd          /boot/initramfs-linux-fallback.img
     }
 
+    submenuentry "Linux-lts" {
+        loader          /boot/vmlinuz-linux-lts
+        initrd          /boot/initramfs-linux-lts.img
+    }
+    
+    submenuentry "Boot using Linux-lts Fallback" {
+        loader          /boot/vmlinuz-linux-lts
+        initrd          /boot/initramfs-linux-fallback.img
+    }
+
     submenuentry "Boot to terminal" {
         add_options "systemd.unit=multi-user.target"
     }
