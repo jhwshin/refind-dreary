@@ -74,6 +74,8 @@ menuentry "Arch" {
 include themes/refind-dreary/theme.conf
 ```
 
+* To hide entries or ui tools press `DEL` in refind menu - they will appear in `hidden tags`
+
 ## TODO:
 * Add script to change boot order Windows / Arch
 
