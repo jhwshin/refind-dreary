@@ -46,6 +46,7 @@ menuentry "Arch" {
     volume          "<LABEL>"
     loader          /boot/vmlinuz-linux
     initrd          /boot/initramfs-linux.img
+    # Splash screen kernel parameters - 'quiet', 'loglevel=3', 'systemd.log_level=debug'
     options         "root=UUID=<UUID> initrd=boot\<CPU_MICROCODE>.img resume=UUID=<UUID> resume_offset=<RESUME_OFFSET>"
     add_options     "rw add_efi_memmap"
 
