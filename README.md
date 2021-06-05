@@ -31,6 +31,7 @@ enable_touch
 #enable_mouse
 dont_scan_volumes "Linux"           #   Prevent duplicate non-custom Linux entries using <LABEL>
 default_selection +                 #   Microsoft, Arch, + (most recently boot)
+resolution max
 
 
 # UI Settings
@@ -42,7 +43,7 @@ showtools mok_tool, hidden_tags, reboot, shutdown, firmware
 
 # OS Entry
 menuentry "Arch" {
-    icon            /EFI/refind/themes/refind-dreary/icons/<OS_ICON>.png
+    icon            /EFI/refind/themes/refind-dreary/icons/os_arch.png
     volume          "<LABEL>"
     loader          /boot/vmlinuz-linux
     initrd          /boot/initramfs-linux.img
