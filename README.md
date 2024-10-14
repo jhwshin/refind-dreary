@@ -1,4 +1,26 @@
-# refind-dreary
+# refind-dreary (forked)
+
+Minor edits to icons and README.md
+
+## Installation
+
+1. Clone this repository:
+```sh
+$   git clone https://github.com/jhwshin/refind-dreary
+```
+
+2. Run installation `install.sh` as `sudo`:
+```sh
+$   sudo ./refind-dreary.git/install.sh <RESOLUTION> <REFIND_DIR>
+
+# example
+$   sudo ./refind-dreary.git/install.sh lowres /boot/EFI/refind
+```
+
+* To hide entries or ui tools press `DEL` in refind menu - they will appear in `hidden tags`
+
+---
+
 ![screenshot](https://i.redditmedia.com/-LCobqYiQ4kLaLS3pmqPjcdnLa2MruQoINa3KDbKVzo.jpg?s=f4cd6834507dd0dfd046684745ab7954)
 
 A gloomy rEFInd theme (as seen in [this Reddit thread](https://www.reddit.com/r/unixporn/comments/6370xc/i_present_to_you_refinddreary_a_gloomy_elegant/)) based on rEFInd-minimal and rEFInd-ambience, taking the best of both themes.

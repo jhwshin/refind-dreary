@@ -1,15 +1,19 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 # -------------------------------------------------
 #  Installation script for the refind-dreary theme
 # -------------------------------------------------
 
+SCRIPT_PATH=$(realpath "${0}")
+SCRIPT_DIR=$(dirname "${SCRIPT_PATH}")
+ROOT_PARTITION=$3
 
 RES="$1"
 INSTALLER_DIR="$(dirname $(readlink -f $0))"
 REFIND_DIR="$2"
 DEST_DIR="${REFIND_DIR}/themes/refind-dreary"
 
+source "${SCRIPT_DIR}/config.sh"
 
 # Exit when an error occurs
 set -e
@@ -50,6 +54,8 @@ fi
 # Include the refind-dreary theme
 if ! grep -q -e "^[[:space:]]*include[[:space:]]themes/refind-dreary/theme.conf" "$REFIND_DIR/refind.conf"; then
 cat >> "${REFIND_DIR}/refind.conf" << EOF
+
+${REFIND_CONFIG}
 
 # Apply the refind-dreary theme
 include themes/refind-dreary/theme.conf
