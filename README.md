@@ -1,3 +1,28 @@
+# refind-dreary (forked)
+
+ - Check entries `entries.sh`
+ - To hide entries or ui tools press `DEL` in refind menu - they will appear in `hidden tags`
+ 
+## Installation
+
+1. Clone this repository:
+```sh
+$   git clone https://github.com/jhwshin/refind-dreary.git
+```
+
+2. Run installation `install.sh` as `sudo`:
+```sh
+$   sudo ./refind-dreary.git/install.sh <RESOLUTION> <REFIND_DIR> <ROOT_PARTITION> <RESUME_OFFSET> <NVIDIA>
+
+# example
+$   sudo ./refind-dreary.git/install.sh lowres /boot/EFI/refind /dev/sda2 4028 true
+```
+
+> __RESOLUTION:__
+* `lowres`  - [32x32] (RECOMMENDED)
+* `highres` - [64x64]
+
+
 # refind-dreary
 ![screenshot](https://i.redditmedia.com/-LCobqYiQ4kLaLS3pmqPjcdnLa2MruQoINa3KDbKVzo.jpg?s=f4cd6834507dd0dfd046684745ab7954)
 
