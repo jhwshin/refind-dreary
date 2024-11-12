@@ -27,9 +27,9 @@ menuentry \"Arch Linux\" {
 
     # Splash screen kernel parameters - 'quiet', 'loglevel=3', 'systemd.log_level=debug'\
 
-    options             \"rd.luks.name=${UUID}=crypt root=/dev/mapper/crypt rootflags=subvol=@ rw resume=UUID=${UUID} resume_offset=${RESUME_OFFSET} ${NVIDIA_KERNEL_PARAMS}\"
+    options             \"rd.luks.name=${UUID}=crypt root=/dev/mapper/crypt rootflags=subvol=@ rw resume=/dev/mapper/crypt resume_offset=${RESUME_OFFSET} ${NVIDIA_KERNEL_PARAMS}\"
 
-    # options           \"root=${UUID}=<UUID> rw resume=UUID=${UUID} resume_offset=${RESUME_OFFSET} ${NVIDIA_KERNEL_PARAMS}\"
+    # options           \"root=${UUID}=<UUID> rw resume=/dev/mapper/crypt resume_offset=${RESUME_OFFSET} ${NVIDIA_KERNEL_PARAMS}\"
 
     # add_options       \"rw add_efi_memmap\"
 

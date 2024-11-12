@@ -17,7 +17,7 @@ UUID=$3
 RESUME_OFFSET=$4
 NVIDIA=$5
 
-source "${SCRIPT_DIR}/config.sh"
+source "${SCRIPT_DIR}/entries.sh"
 
 # Exit when an error occurs
 set -e
