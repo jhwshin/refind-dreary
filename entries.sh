@@ -1,8 +1,7 @@
-"${NVIDIA}" && NVIDIA_KERNEL_PARAMS="nvidia-drm.modeset=1 nvidia.NVreg_PreserveVideoMemoryAllocations=1"
+"${NVIDIA}" && NVIDIA_KERNEL_PARAMS="nvidia-drm.modeset=1 nvidia.NVreg_PreserveVideoMemoryAllocations=1 nvidia.NVreg_TemporaryFilePath=/var/tmp"
 # nvidia-drm.fbdev=1
 # nvidia.NVreg_RegistryDwords=EnableBrightnessControl=1
 # nvidia.NVreg_UsePageAttributeTable=1
-# nvidia.NVreg_TemporaryFilePath=/var/tmp
 
 REFIND_CONFIG="
 timeout 10                          #   [-1, 0, 0+] (skip, no timeout, x seconds)
