@@ -1,4 +1,5 @@
-"${NVIDIA}" && NVIDIA_KERNEL_PARAMS="nvidia-drm.modeset=1 nvidia.NVreg_PreserveVideoMemoryAllocations=1 nvidia.NVreg_TemporaryFilePath=/var/tmp"
+# refer to github.com/jhwshin/arch-install README.md for nvidia notes
+"${NVIDIA}" && NVIDIA_KERNEL_PARAMS="nvidia-drm.modeset=1 nvidia.NVreg_PreserveVideoMemoryAllocations=0 nvidia.NVreg_TemporaryFilePath=/var/tmp"
 # nvidia-drm.fbdev=1
 # nvidia.NVreg_RegistryDwords=EnableBrightnessControl=1
 # nvidia.NVreg_UsePageAttributeTable=1
