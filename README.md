@@ -22,6 +22,11 @@ $   sudo ./refind-dreary.git/install.sh lowres /boot/EFI/refind /dev/sda2 4028 t
 * `lowres`  - [32x32] (RECOMMENDED)
 * `highres` - [64x64]
 
+__!! IMPORTANT !!__:
+Make sure to edit:
+ - options
+ - entries
+
 
 # refind-dreary
 ![screenshot](https://i.redditmedia.com/-LCobqYiQ4kLaLS3pmqPjcdnLa2MruQoINa3KDbKVzo.jpg?s=f4cd6834507dd0dfd046684745ab7954)

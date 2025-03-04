@@ -9,7 +9,8 @@ timeout 10                          #   [-1, 0, 0+] (skip, no timeout, x seconds
 log_level 0                         #   [0-4]
 # enable_touch
 # enable_mouse
-# dont_scan_volumes ""
+# scan_delay 1
+# scanfor manual, external, internal
 default_selection +                 #   Microsoft, Arch, + (most recently boot)
 resolution max
 
@@ -18,6 +19,12 @@ resolution max
 hideui singleuser, hints, badges
 # shell, memtest, mok_tool, hidden_tags, shutdown, reboot, firmware
 showtools mok_tool, hidden_tags, reboot, shutdown, firmware
+
+menuentry \"Windows 10\" {
+    icon    /EFI/refind/themes/refind-dreary/icons/os_win.png
+    loader  \EFI\Microsoft\Boot\bootmgfw.efi
+    volume  \"<NAME>\"
+}
 
 menuentry \"Arch Linux\" {
     icon                /EFI/refind/themes/refind-dreary/icons/os_arch.png
